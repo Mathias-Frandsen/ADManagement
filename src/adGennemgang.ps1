@@ -1,0 +1,1 @@
+﻿Get-ADUser -Filter * -Properties * |select-object displayname,givenname,surname,samaccountname,distinguishedname,Description,Department,Officephone,mobilephone,homePhone,title,office,street,emailaddress,Enabled,thumbnailPhoto,info | export-csv \\fil01\it$\Teknik\Vejle\streamline\csv\adGennemgang.csv -Encoding Default -NoTypeInformation
